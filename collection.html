@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #main
+    {
+        height: 1000px;
+        width: 1200px;
+        display: grid;
+        margin: auto;
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+    }
+    .box
+    {
+       
+        width: 300px;
+        height: 300px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+     
+      
+        animation: rey 1s ;
+
+    }
+    .box:hover
+    {
+        animation: rey2 1s;
+        position: relative;
+        box-shadow: 10px 10px 25px black;
+    }
+    @keyframes rey
+    {   0%{transform: translateY(40px);opacity:0%;}
+        
+        50%{transform: translateY(-20px);opacity: 50%;}
+        100%{transform: translateY(0px);opacity: 100%;}
+    }
+    @keyframes rey2
+    {
+     
+
+        100%{transform: rotate(20deg);border: 5px solid black;top: 10px;}
+        
+    
+    }
+    h1{
+        display: block;
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+        font-size: xx-large;
+    }
+        
+    .box1
+    {
+        display: block;
+        margin: auto;
+       height: 400px;
+       width: 300px;
+       background-color: rgba(255, 153, 0, 0.637);
+       border-radius: 20px;
+   
+    }
+    .box1:hover
+    {
+        animation: box 1s;
+    }
+    @keyframes box
+    {
+        0%{background-color: rgba(165, 42, 42, 0.486);;}
+        50%{background-color: rgba(210, 105, 30, 0.555)}
+        100%{background-color:  rgba(247, 159, 26, 0.637);}
+    }
+    
+    .top
+    {
+     
+        margin-left: -10px;
+        margin-right: -10px;
+        margin-top: -10px;
+        height: 70px;
+    
+       
+    }
+    .link
+    {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 40px;
+        color: aliceblue;
+        padding: 30px;
+        border: solid wheat;
+        border-radius: 40px;
+        margin-left: 60px;
+        background-color: rgb(0, 0, 0);
+          
+        
+    }
+    .link:hover
+    {
+        background-color: rgb(39, 37, 37);
+        color:aqua;
+    }
+    body
+    {
+        background-image: url("bgg1.jpg");
+        background-size: 120%;
+        
+    }
+
+    
+</style>
+<body>
+    <div class="top"></div>
+    <div class="top">
+        <a href="home.html" class="link">Home</a>
+        <a href="about.html" class="link">About</a>
+        <a href="collection.html" class="link">Collections</a>
+        <a href="review.html" class="link">Review</a>
+        </div>
+        <br><br><br><br><br>
+    <section id="main">
+        <div class="box1">
+            <a href="shirt.html"><img src="shirt.avif" alt="" class="box"></a><br><h1>Shirt</h1></div>
+    <div class="box1"><a href=""> <img src="hoodie.jpg" alt="" class="box"></a><br><h1>Hoodie</h1></div>
+    <div class="box1"><a href=""> <img src="cout.jpg" alt="" class="box"></a><br><h1>Cout-Suit</h1></div>
+        <div class="box1"><a href=""> <img src="phant.jpg" alt="" class="box"></a><br><h1>Phant</h1></div>
+            <div class="box1"> <a href=""> <img src="sharvani.jpg" alt="" class="box"></a><br><h1>Sherwani</h1></div>
+                <div class="box1"><a href=""> <img src="tracksuit.jpg" alt="" class="box"></a><br><h1>TrackSuit</h1></div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     .top
+    {
+        /* background-color: rgb(0, 0, 0); */
+        margin-left: -30px;
+        margin-right: -10px;
+        margin-top: -10px;
+        height: 70px;
+    
+       
+    }
+    .link
+    {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: x-large;
+        color: aliceblue;
+        padding: 30px;
+        border: solid wheat;
+        border-radius: 40px;
+        margin-left: 70px;
+        background-color: rgb(0, 0, 0);
+        
+        
+    }
+    .link:hover
+    {
+        background-color: rgb(39, 37, 37);
+        color:aqua;
+        transform:scale(0.9);
+    transition:0.5s;
+    }
+    body
+    {
+        background-image: url("bgg4.jpg");
+        background-size: 110%;
+        transform:scale(0.9);
+    transition:0.5s;
+    }
+    .mid
+    {
+        margin: auto;
+        background-color: rgba(255, 153, 0, 0.527);
+        width: 300px;
+        border-radius: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: xx-large;
+        color: rgb(0, 0, 0);
+        padding: 20px;
+        border: 3px solid;
+    }
+    .button
+    {
+        background-color: rgba(221, 153, 27, 0.685);
+        border:5px dashed rgb(211, 224, 224);
+        border-radius: 60px;
+        color: brown;
+        margin-left: 100px;
+        width: 100px;
+        height: 100px;
+        font-size: x-large;
+        font-family:Arial, Helvetica, sans-serif;
+
+    }
+    .button:hover
+    {
+        background-color: black;
+        color: aqua;
+        animation: rey 1s;
+    }
+    @keyframes rey
+    {
+        0%{transform: rotate(180deg);}
+        100%{transform: rotate(360deg);}
+    }
+    .input
+    {
+        width: 300px;
+        border-radius: 20px;
+        height: 30px;
+        background-color: rgba(221, 153, 27, 0.685);
+        border:5px solid rgb(211, 224, 224);
+
+    }
+    label
+    {
+        font-size: xx-large;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+    }
+    .table
+    {
+        margin: auto;
+        padding: 20px;
+      
+    }
+    .table:hover
+    {
+        transform:scale(0.9);
+    transition:0.5s;
+    }
+    .td
+    {
+        padding-left: 30px;
+        font-size: xx-large;
+        background-color: rgba(240, 248, 255, 0.363);
+        border-radius: 20px;
+        height: 20px;
+        color: rgb(0, 0, 0);
+    }
+    .image
+    {
+        width: 100px;
+        height: 100px;
+        border-radius: 60px;
+    }
+    .image:hover
+    {
+        animation:aa 1s;
+    }
+    @keyframes aa
+    {
+        0%{transform: rotate(180deg);}
+        100%{transform: rotate(360deg);}
+    }
+</style>
+<body>
+    
+    <div class="top">
+        <a href="home.html" class="link">Home</a>
+        <a href="about.html" class="link">About</a>
+        <a href="collection.html" class="link">Collections</a>
+        <a href="review.html" class="link">Review</a>
+        </div>
+        <br><br><br><br><br>
+    <form action="home.html">
+    <div class="mid">
+        <label for="name" class="label"><strong>NAME:</strong></label><br>
+        <input type="text" name="name" class="input" placeholder="..Name" required><br><br>
+        <label for="email" class="label"><strong>EMAIL:</strong></label><br>
+        <input type="email" class="input" placeholder="Email" required><br><br>
+        <label for="message" class="label"><strong>MESSAGE</strong></label><br>
+        <input type="textarea" class="input"placeholder="message" required><br><br><br>
+        <button class="button"><strong>Donate</strong></button>
+
+
+    </div><br><b><br><br><br><br>
+    <table class="table">
+        <tr>
+            <td>
+                <img src="l1.jpg" alt="NO 1" class="image" width="100" height="100">
+            </td>
+            <td class="td">
+                     <strong> NO. 1. SELLER IN INADIA <BR>We are proud to say that we have 40+ Branchs in INDIA and this is a INDIAN Product !</strong>
+            </td>
+        </tr>
+         <tr>
+            <td><br><br><br><br>
+                <img src="l2.jpg" alt="NO 1" class="image" width="100" height="100">
+            </td>
+            <td class="td"><br><br>
+                     <strong><b>Best coustemer care and neat,clean and sanitised area .Large parking area ! </b></strong>
+            </td>
+        </tr>
+        <tr>
+            <td><br><br><br><br>
+                <img src="l4.jpg" alt="NO 1"  class="image" width="100" height="100" cla>
+            </td>
+            <td class="td"><br><br>
+                     <strong><b>Best srevice available in online and offline .Either got to nearby store or contact phno:9012345876</b></strong>
+            </td>
+        </tr>
+        
+    </table >
+</form>
+</body>
+</html>

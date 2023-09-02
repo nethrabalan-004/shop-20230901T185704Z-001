@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="prog.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    .box
+    {
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        display: block;
+        margin: auto;
+        border-radius: 20px;
+        animation: rey 5s;
+        position: relative;
+        animation-iteration-count: infinite;
+    }
+    @keyframes rey
+    {
+        0%{background-color: aqua;box-shadow: 10px 10px 25px black;left: 50px;top: 0px;}
+        25%{background-color: blue;box-shadow: 20px 20px 25px black;left: 50px;top: 50px;}
+        50%{background-color: blueviolet;box-shadow: 30px 30px 25px black;left: 0px;top: 50px;}
+        75%{background-color: cadetblue;box-shadow: 20px 20px 25px black;left: 10px;top: 50px;}
+        100%{background-color: brown;box-shadow: 10px 10px 25px black;left:0px ;top: 0px;}
+    }
+</style>
+<body>
+    <div class="box"></div>
+    
+</body>
+</html>
